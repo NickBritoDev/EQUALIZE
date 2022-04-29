@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--icons-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Tapestry&display=swap" rel="stylesheet">
+  <!--css-->
+  <link rel="stylesheet" href="style.css">
+  <title>Equalizer</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="top-bar">
+      <i class="fa fa-caret-square-o-down" ></i>
+      <h1>EQUAL<span class="fa fa-podcast"></span>ZER</h1>
+      <i><ion-icon name="ellipsis-horizontal"></ion-icon></i>
+    </div>
+    <div class="background">
+      <img src="" alt="">
+    </div>
+    <div class="song-details">
+      <p class="name"></p>
+      <p class="artist"></p>
+    </div>
+    <div class="progress">
+      <div class="progress-bar"></div>
+      <div class="timer">
+        <span class="current"></span>
+        <span class="duration"></span>
+      </div>
+      <audio id="main-audio" src=""></audio>
+    </div>
+    <div class="controls">
+      <i id="repeat" class="material-icons" title="Playlist looped">repeat</i>
+      <i id="prev" class="fa fa-step-backward"></i>
+      <div class="play-pause">
+        <i class="material-icons">play_arrow</i>
+      </div>
+      <i id="next" class="fa fa-step-forward"></i>
+      <i id="more-music" class="fa fa-bars"></i>
+    </div>
+    <div class="music-list">
+      <div class="header">
+        <div class="row">
+          <i class="fa fa-music"></i>
+          <span>Music-list</span>
+        </div>
+        <i id="close" class="fa fa-close"></i>
+      </div>
+      <ul>
+      </ul>
+    </div>
+  </div>
+<!--javascript area-->
+<script src="javascript/data.js"></script>
+<script src="javascript/java.js"></script>
+</body>
+</html>
